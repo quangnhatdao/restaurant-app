@@ -13,7 +13,7 @@ python -m venv env
 ```
 ### Activate the virtual environment
 ```bash
-venv\Scripts\activate
+env\Scripts\activate
 ```
 ### Install packages specified in requirements.txt
 ```bash
