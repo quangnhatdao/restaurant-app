@@ -20,11 +20,16 @@ env\Scripts\activate
 python -m pip install -r requirements.txt
 ```
 
-## 2. Start the development server
-
-### Navigate to app directory
+## IMPORTANT: The below code require navigation to the app directory
 ```bash
 cd app
+```
+
+## 2. Start the development server
+
+### Run migrations (If you have not already)
+```bash
+python manage.py migrate
 ```
 ### Start the server
 ```bash
@@ -33,10 +38,6 @@ python manage.py runserver
 
 ## 3. After change the models
 
-### Navigate to app directory
-```bash
-cd app
-```
 ### Make migrations
 ```bash
 python manage.py makemigrations
