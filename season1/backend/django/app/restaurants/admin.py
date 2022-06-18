@@ -13,7 +13,6 @@ class DishInline(admin.TabularInline):
 admin page for restaurant
 """
 class RestaurantAdmin(admin.ModelAdmin):
-    readonly_fields=('owner',)
     fieldsets = [
         (None,               {'fields': ['name']}),
         (None,               {'fields': ['address']}),
@@ -21,20 +20,6 @@ class RestaurantAdmin(admin.ModelAdmin):
         (None,               {'fields': ['image']})
     ]
     inlines = [DishInline]
-    list_display = ('name', 'address', 'owner')
-
-    def save_model(self, request, obj, form, change):
-        obj.owner = request.user
-        super().save_model(request, obj, form, change)
-
-    def has_change_permission(self, request, obj=None):
-        if obj is not None and obj.owner != request.user:
-            return False
-        return True
-
-    def has_delete_permission(self, request, obj=None):
-        if obj is not None and obj.owner != request.user:
-            return False
-        return True
+    list_display = ('name', 'address')
 
 admin.site.register(Restaurant, RestaurantAdmin)

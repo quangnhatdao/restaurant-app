@@ -5,7 +5,6 @@ from django.contrib.auth.models import User
 model for restaurant
 """
 class Restaurant(models.Model):
-    owner = models.ForeignKey(User, editable=False, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     address = models.CharField(max_length=100)
     tags = models.CharField(max_length=100)
