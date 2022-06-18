@@ -13,4 +13,4 @@ Imagine that a solid number of seasons has been implemented. If I were to work i
 ## Interested? Clone this down and try out?
 I really hope that many people will participate in this new form of "Learn to code". Also, if something is wrong in the code, I would be so glad if you let me know.
 
-#HAVE A NICE DAY
+# HAVE A NICE DAY!
