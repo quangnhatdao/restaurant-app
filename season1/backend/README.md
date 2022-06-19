@@ -1,5 +1,5 @@
-# Backend For Restaurant App Implemented With Django
-This is meant to implement the backend for the Restaurant App with Django. You can read the following instructions to set up and work with the backend.
+# Backend For Restaurant App
+This project implements the backend for the Restaurant App with Django. You can read the following instructions to set up and work with the backend.
 
 # API
 The backend is served on
