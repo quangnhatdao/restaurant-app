@@ -1,6 +1,22 @@
-# Backend Server For Restaurant App Implemented With Django
+# Backend For Restaurant App Implemented With Django
+This is meant to implement the backend for the Restaurant App with Django. You can read the following instructions to set up and work with the backend.
 
-## 1. Set up
+# API
+The backend is served on:
+```bash
+http://127.0.0.1:8000/
+```
+To access the admin page, navigate to:
+```bash
+http://127.0.0.1:8000/admin
+```
+The API of the backend is defined along:
+```bash
+http://127.0.0.1:8000/api
+```
+You can look up django/app/app/urls.py and django/app/restaurants/urls.py to find out more about the available API routes.
+
+# Set up
 
 ### Navigate to django directory
 ```bash
@@ -20,12 +36,12 @@ env\Scripts\activate
 python -m pip install -r requirements.txt
 ```
 
-## IMPORTANT. The below code require navigation to the app directory
+# IMPORTANT. The below code require navigation to the app directory
 ```bash
 cd app
 ```
 
-## 2. Start the development server
+# Start the development server
 
 ### Run migrations (necessary for first time running the server or after change of models)
 ```bash
@@ -36,7 +52,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-## 3. After change of models
+# After change of models
 
 ### Make migrations
 ```bash
@@ -47,7 +63,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-## 4. Others
+# Others
 
 ### Create super user
 ```bash
