@@ -1,6 +1,8 @@
 # Backend For Restaurant App
 This project implements the backend for the Restaurant App with Django. You can read the following instructions to set up and work with the backend.
 
+![alt text](https://i.ibb.co/0hmDDRZ/django-admin.jpg)
+
 # API
 The backend is served on
 ```bash
