@@ -17,55 +17,49 @@ http://127.0.0.1:8000/api
 You can look up django/app/app/urls.py and django/app/restaurants/urls.py to find out more about the available API routes.
 
 # Set up
-
-### Navigate to django directory
+Navigate to django directory
 ```bash
 cd django
 ```
-
-### Create virtual environment
+Create virtual environment
 ```bash
 python -m venv env
 ```
-### Activate the virtual environment
+Activate the virtual environment
 ```bash
 env\Scripts\activate
 ```
-### Install packages specified in requirements.txt
+Install packages specified in requirements.txt
 ```bash
 python -m pip install -r requirements.txt
 ```
-
-# IMPORTANT. The below code require navigation to the app directory
+IMPORTANT! The below code require navigation to the app directory
 ```bash
 cd app
 ```
 
 # Start the development server
-
-### Run migrations (necessary for first time running the server or after change of models)
+Run migrations (necessary for first time running the server or after change of models)
 ```bash
 python manage.py migrate
 ```
-### Start the server
+Start the server
 ```bash
 python manage.py runserver
 ```
 
 # After change of models
-
-### Make migrations
+Make migrations
 ```bash
 python manage.py makemigrations
 ```
-### Run migrations
+Run migrations
 ```bash
 python manage.py migrate
 ```
 
 # Others
-
-### Create super user
+Create super user
 ```bash
 python manage.py createsuperuser
 ```
