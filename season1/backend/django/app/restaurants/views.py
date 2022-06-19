@@ -207,6 +207,7 @@ def dish_list(request, restaurant_id):
 """
 method for retrieving, updating and deleting a dish by id of a restaurant by id
 """
+@csrf_exempt
 def dish_detail(request, restaurant_id, dish_id):
 
     # GET
@@ -286,6 +287,7 @@ def dish_detail(request, restaurant_id, dish_id):
 """
 method for uploading image for a dish by id of a restaurant by id
 """
+@csrf_exempt
 def dish_upload_image(request, restaurant_id, dish_id):
     if request.method == POST:
 
