@@ -62,8 +62,8 @@
         ></b-form-file>
       </b-form-group>
 
-      <b-button type="submit" variant="primary">Submit</b-button>
-      <b-button type="reset" variant="danger">Reset</b-button>
+      <b-button type="submit" variant="warning">Submit</b-button>
+      <b-button type="reset" variant="warning">Reset</b-button>
 
       <b-modal id="restaurant-add-success-modal" title="Add successful" ok-variant="warning" @ok="handleOk">
         <p class="my-4">Restaurant was successfully added</p>

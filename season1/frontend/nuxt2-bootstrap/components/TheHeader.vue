@@ -3,7 +3,7 @@
     <b-navbar toggleable="lg" type="dark" variant="danger">
       <b-navbar-brand href="/">Restaurant App</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-      <b-button size="sm" class="my-2 my-sm-0" variant="warning" to="restaurants/add_restaurant"
+      <b-button size="sm" class="my-2 my-sm-0" variant="warning" href="http://localhost:3000/restaurants/add_restaurant"
         >Add restaurant</b-button
       >
       <b-collapse id="nav-collapse" is-nav>

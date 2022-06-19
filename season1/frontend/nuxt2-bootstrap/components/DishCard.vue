@@ -13,7 +13,7 @@
     <b-card-text>
       {{ 'price: ' + price + '$' }}
     </b-card-text>
-
+    <b-button variant="warning" :href="'http://localhost:3000/restaurants/' + restaurant + '/dishes/' + id">Go to details</b-button>
   </b-card>
 </template>
 

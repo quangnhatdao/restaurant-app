@@ -81,7 +81,7 @@
       <b-button type="submit" variant="warning">Edit</b-button>
       <b-button type="reset" variant="warning">Reset</b-button>
 
-      <b-modal id="restaurant-edit-success-modal" title="Edit successful" ok-variant="warning">
+      <b-modal id="restaurant-edit-success-modal" title="Edit successful" ok-variant="warning" @ok="handleOk">
         <p class="my-4">Your edit was successfully processed</p>
       </b-modal>
 
@@ -154,7 +154,7 @@
       <b-button type="submit" variant="warning">Add</b-button>
       <b-button type="reset" variant="warning">Reset</b-button>
 
-      <b-modal id="dish-add-success-modal" title="Dish added successfully" ok-variant="warning">
+      <b-modal id="dish-add-success-modal" title="Dish added successfully" ok-variant="warning" @ok="handleOk">
         <p class="my-4">Your dish was successfully added</p>
       </b-modal>
 
@@ -190,7 +190,7 @@
         >Delete</b-button
       >
 
-      <b-modal id="restaurant-delete-confirm-modal" title="Delete restaurant" ok-variant="warning" @ok="handleOk">
+      <b-modal id="restaurant-delete-confirm-modal" title="Delete restaurant" ok-variant="warning" @ok="handleOkDelete">
         <p class="my-4">Do you want to delete this restaurant?</p>
         <template v-slot:modal-ok>
           Delete
@@ -322,7 +322,7 @@ export default {
         this.dish_form.image = null;
       }
     },
-    handleOk(bvModalEvent) {
+    handleOkDelete(bvModalEvent) {
         // Prevent modal from closing
         bvModalEvent.preventDefault()
 
@@ -343,6 +343,12 @@ export default {
             console.log(error);
           });
     },
+    handleOk(bvModalEvent) {
+        // Prevent modal from closing
+        bvModalEvent.preventDefault()
+        var vm = this;
+        window.location.href = "http://localhost:3000/restaurants/" + vm.restaurant;
+    }
   },
 
   mounted() {

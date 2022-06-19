@@ -13,7 +13,7 @@
     <b-card-text>
       {{ tags }}
     </b-card-text>
-    <b-button variant="warning" :href="'restaurants/' + id">Go to details</b-button>
+    <b-button variant="warning" :href="'http://localhost:3000/restaurants/' + id">Go to details</b-button>
   </b-card>
 </template>
 
