@@ -14,7 +14,7 @@ This season implements the Restaurant App with the following tech stack:
     - Axios
 + For backend
     - Django
-    - mySQL
+    - SQLite
     
 Nonetheless, there are some remaining issues:
 + The UI looks crude
