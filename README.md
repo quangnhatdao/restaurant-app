@@ -1,4 +1,4 @@
-# restaurant-app
+# Restaurant App
 I learn new programming languages or technologies mostly via tutorials. However, the examples in those tutorials derive from different domains. For example, a tutorial can be about creating an app for managing employees or showing a list of fruits. This makes it difficult to realize an idea requiring different languages/technologies. Therefore, I use this project to employ different tools to make an app. The ideas behind this app mostly stay consistent so I only need to focus on using the technologies instead of the domain.
 
 ## What does Restaurant App do?
