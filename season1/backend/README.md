@@ -2,15 +2,15 @@
 This is meant to implement the backend for the Restaurant App with Django. You can read the following instructions to set up and work with the backend.
 
 # API
-The backend is served on:
+The backend is served on
 ```bash
 http://127.0.0.1:8000/
 ```
-To access the admin page, navigate to:
+To access the admin page, navigate to
 ```bash
 http://127.0.0.1:8000/admin
 ```
-The API of the backend is defined along:
+The API of the backend is defined along
 ```bash
 http://127.0.0.1:8000/api
 ```
